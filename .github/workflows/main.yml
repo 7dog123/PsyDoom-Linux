@@ -48,6 +48,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: build PsyDoom
         run: |
-          cmake -S PsyDoom -B build -DCMAKE_C_COMPILER=gcc-10 \
-          -DCMAKE_CXX_COMPILER=g++-10
+          cmake -S PsyDoom -B build -DCMAKE_C_COMPILER=clang-12 \
+          -DCMAKE_CXX_COMPILER=clang++-12
           cmake --build build

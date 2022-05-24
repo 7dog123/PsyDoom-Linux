@@ -10,6 +10,19 @@ index 16f80665..8d431fda 100644
  #include <vector>
  
  BEGIN_NAMESPACE(FatalErrors)
+diff --git a/game/Doom/Game/p_ceiling.cpp b/game/Doom/Game/p_ceiling.cpp
+index 49982e41..20fb88ff 100644
+--- a/game/Doom/Game/p_ceiling.cpp
++++ b/game/Doom/Game/p_ceiling.cpp
+@@ -11,6 +11,8 @@
+ #include "p_tick.h"
+ #include "PsyDoom/ScriptingEngine.h"
+ 
++#include <cmath>
++
+ // Normal move speed for ceilings/crushers
+ static constexpr fixed_t CEILSPEED = FRACUNIT * 2;
+ 
 diff --git a/simple_gpu/Gpu.cpp b/simple_gpu/Gpu.cpp
 index 6668e1ff..c0ca1bd4 100644
 --- a/simple_gpu/Gpu.cpp
